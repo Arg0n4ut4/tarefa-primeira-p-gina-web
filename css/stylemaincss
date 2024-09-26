@@ -1,0 +1,115 @@
+
+body{
+    background-color: #2B2B2B;
+}
+
+.letreiro {
+    display: flex;
+    justify-content:left;
+    align-items: left;
+    position: relative; /* Ajuste para manter a posição relativa */
+    width: 60vw; /* 30% da largura da viewport */
+    height: auto; /* Ajusta automaticamente a altura */
+    margin-left: -10px;
+    margin-top: -10px;
+    user-select: none;
+}
+
+/* Estilo para a imagem */
+.letreiro img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    z-index: 1;
+    pointer-events: none; /* Impede qualquer interação com a imagem */
+    user-select: none; /* Impede a seleção da imagem */
+}
+
+.botaoredondo {
+    background-color: #7ED957;
+    position: absolute;
+    width: 6vw; /* Ajusta o tamanho com base na largura da viewport */
+    height: 6vw; /* Mantém o botão redondo */
+    border-radius: 50%; /* Torna o botão circular */
+    z-index: 2;
+
+    /* Ajuste a posição do botão */
+    top: 20.3%; /* Define a posição superior */
+    left: 50%; /* Define a posição à esquerda */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+
+}
+
+.botaoredondo:hover {
+    filter: brightness(0.8); /* Escurece o botão */
+    cursor: pointer;
+    /* Alternativamente, você pode usar:
+    background-color: #6CB850; /* Definir uma cor mais escura */
+}
+
+.botaoredondo img {
+    width: 80%;
+    height: auto;
+    left: 10%;
+    top: 8%;
+    position: absolute;
+    user-select: none; /* Impede a seleção da imagem */
+}
+
+.botaoinsta {
+    background-color: #7ED957;
+    position: absolute;
+    width: 6vw; /* Ajusta o tamanho com base na largura da viewport */
+    height: 6vw; /* Mantém o botão redondo */
+    border-radius: 50%; /* Torna o botão circular */
+    z-index: 2;
+
+    /* Ajuste a posição do botão */
+    top: 20.3%; /* Define a posição superior */
+    left: 70%; /* Define a posição à esquerda */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+}
+
+.botaoinsta img{
+    width: 90%;
+    height: auto;
+    left: 5%;
+    top: 5.3%;
+    position: absolute;
+    user-select: none; /* Impede a seleção da imagem */
+}
+
+.botaoinsta:hover{
+    filter: brightness(0.8); /* Escurece o botão */
+    cursor: pointer;
+    /* Alternativamente, você pode usar:
+    background-color: #6CB850; /* Definir uma cor mais escura */
+}
+
+/* Estiliza a barra de rolagem inteira */
+::-webkit-scrollbar {
+    width: 15px; /* Largura da barra de rolagem */
+    height: 4px; /* Altura da barra de rolagem (para barras horizontais) */
+}
+
+/* Estiliza o trilho da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #444444; /* Cor do trilho da barra de rolagem */
+    border-radius: 5px; /* Arredondamento do trilho */
+}
+
+/* Estiliza o polegar da barra de rolagem (parte que se move) */
+::-webkit-scrollbar-thumb {
+    background-color: #696868; /* Cor do polegar */
+    border-radius: 10px; /* Arredondamento do polegar */
+    border: 3px solid #444444; /* Espaço entre o polegar e o trilho */
+}
+
+/* Estiliza o polegar quando está sendo clicado ou em foco */
+::-webkit-scrollbar-thumb:active {
+    background-color: #7e7e7e; /* Cor do polegar quando clicado */
+}
+
+/* Estiliza o canto entre as barras de rolagem (quando ambas são visíveis) */
+::-webkit-scrollbar-corner {
+    background-color: #444444; /* Cor do canto */
+}
